@@ -42,6 +42,9 @@ $color-gold-primary: #ffbf00;
     }
     &::before {
         transform: translateY(-0.55rem) rotate(-230deg);
+        @media(max-width:1200px) {
+          transform: translateY(-0.6rem) rotate(-230deg);
+        }
 }
 &::after {
     transform: translateY(-1.75rem) rotate(230deg);
@@ -76,9 +79,9 @@ $color-gold-primary: #ffbf00;
      }
   }
 
-&__button:hover *{
-  transform:translateY(-.4rem);
-}
+// &__button:hover *{
+//   transform:translateY(-.4rem);
+// }
 
   &__icon {
     &,
@@ -89,6 +92,11 @@ $color-gold-primary: #ffbf00;
         background-color: $color-black-dark;
         display: inline-block;
       transition: all .3s;
+
+      @media(max-width:1200px) {
+        width: 2rem;
+
+      }
       
 
     }
@@ -183,7 +191,7 @@ padding: 1rem 2rem;
 transition: all .4s;
 
 @media (max-width: 500px) {
-    font-size:.5rem;
+    font-size:2.5rem;
   }
  
 span {

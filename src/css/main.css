@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "The Seasons";
+  src: url(./fonts/The-Seasons/The-Seasons-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "The Italic Seasons";
+  src: url(./fonts/The-Seasons/The-Seasons-Light-Italic.ttf) format("truetype");
+}
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  color: #FAF2E9;
+  background-color: #1C1C1A;
+}
+
+h1 {
+  font-family: The Italic Seasons, Arial, Helvetica, sans-serif;
+  font-size: 8rem;
+  letter-spacing: 1.5rem;
+  font-weight: 200;
+  font-style: italic;
+}
+
+h2 {
+  font-family: The Seasons, Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: The Seasons, Arial, Helvetica, sans-serif;
+  font-size: 2.6rem;
+  font-weight: 200;
+}
+
+p {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+button {
+  width: fit-content;
+  background-color: rgba(7, 7, 6, 0.4);
+  color: #FAF2E9;
+  border: #FAF2E9 solid 2px;
+  box-shadow: 0.5rem 1rem 2rem rgba(250, 242, 233, 0.3);
+  border-radius: 2rem;
+  padding: 0.6rem 2rem 0.6rem;
+  transition: all 0.3s;
+}
+button:hover {
+  cursor: pointer;
+  animation-name: Grow;
+  animation-duration: 0.3s;
+  transform: scale(1.1);
+}
+
+.App {
+  width: 100vw;
+  max-width: 1550px;
+  margin: 0 auto;
+  min-width: 30rem;
+  display: grid;
+  place-content: center;
+  position: relative;
+}
+
+.section {
+  text-align: center;
+  padding: 5rem 0 0;
+  border-bottom: #ffbf00 solid 1px;
+  box-shadow: 0.3rem 0rem 2rem rgba(255, 191, 0, 0.25);
+}
+
+.Header {
+  width: 100%;
+  background-image: linear-gradient(to right bottom, rgba(7, 7, 6, 0.2), rgba(7, 7, 6, 0.8), rgba(255, 191, 0, 0.2)), url(../../public/images/piano-background.jpg);
+  background-size: cover;
+  background-position: center center;
+  min-height: 70rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3rem;
+  position: relative;
+}
+.Header ul {
+  list-style: none;
+}
+.Header__portrait {
+  width: 20rem;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  margin: 0rem;
+}
+.Header__blurb-container {
+  max-width: 45rem;
+  display: flex;
+  flex-direction: column;
+}
+.Header__blurb-container .button-container {
+  display: grid;
+  place-content: center;
+  padding: 1rem 0;
+}
+
+.trifold {
+  display: flex;
+  flex-direction: row;
+  padding: 3rem;
+}
+.trifold h3 {
+  text-transform: uppercase;
+}
+.trifold img {
+  width: 30rem;
+  border-radius: 5px;
+  padding: 0;
+  margin: 1rem;
+  box-shadow: 0 0.5rem 1.8rem rgba(250, 242, 233, 0.25);
+  transition: all 0.2s;
+}
+.trifold img:hover {
+  transform: scale(1.05) translateY(-5px);
+  cursor: pointer;
+}
+.trifold p {
+  width: 30rem;
+}
+.trifold__score {
+  padding: 1rem 5rem;
+}
+.trifold__score * {
+  padding: 0.8rem;
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  50% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes Grow {
+  0% {
+    transform: scale(1);
+  }
+  750% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@font-face {
+  font-family: "The Seasons";
+  src: url(./fonts/The-Seasons/The-Seasons-Light.ttf)
+  format("truetype");
+}
+
+$color-black-dark: #070706;
+$color-black-medium: #1C1C1A;
+$color-black-light: #242424;
+
+$color-white-eggshell: #FAF2E9;
+
+$color-gold-primary: #ffbf00;
+
+
+.navigation {
+  position: relaitve;
+
+
+
+  &__checkbox {
+    display: none;
+  }
+
+&__checkbox:checked ~ &__background {
+    transform: scale(80);
+    overflow: hidden;
+}
+
+&__checkbox:checked ~ &__nav {
+    opacity: 1;
+    width: 100%;
+}
+
+&__checkbox:checked + &__button &__icon {
+    & {
+        // transform: rotate(-180deg);
+        background-color: transparent;
+        
+    }
+    &::before {
+        transform: translateY(-0.55rem) rotate(-230deg);
+}
+&::after {
+    transform: translateY(-1.75rem) rotate(230deg);
+}
+}
+
+  &__button {
+    background-color: rgba($color-gold-primary, 90%);
+    border: 2px solid $color-gold-primary;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 3rem;
+    right: 4rem;
+    z-index: 2000;
+   box-shadow: .3rem .5rem 3rem rgba($color-gold-primary, .3);
+    display: grid;
+    place-items: center;
+    &:hover {
+        cursor: pointer;
+        
+    }
+
+   
+     @media(max-width:1200px) {
+      height: 5rem;
+      width: 5rem;
+      top: 2rem;
+      right: 2rem;
+      
+     }
+  }
+
+&__button:hover *{
+  transform:translateY(-.4rem);
+}
+
+  &__icon {
+    &,
+    &::before,
+    &::after {
+        width: 3rem;
+        height: 2px;
+        background-color: $color-black-dark;
+        display: inline-block;
+      transition: all .3s;
+      
+
+    }
+    &::before,
+    &::after {
+        content: "";
+        
+    }
+    &::before, &::after {
+        transform: translateY(-1.25rem);
+        // transform: scale(1.1);
+    }
+  }
+
+  &__background {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 3.5rem;
+    right: 4.9rem;
+    background-image: radial-gradient(rgba($color-gold-primary, .5) 0%, rgba($color-gold-primary, .55) 10%, rgba($color-black-medium, .9) 20%);
+    z-index: 1000;
+
+    transform: scale(1);
+    transition: all .5s cubic-bezier(0.87, 0, 0.13, 1);
+
+    @media(max-width:1200px) {
+      height: 5rem;
+      width: 5rem;
+      top: 2rem;
+      right: 2rem;
+      
+      background-image: radial-gradient(rgba($color-gold-primary, .5) 0%, rgba($color-gold-primary, .55) 7%, rgba($color-black-medium, .85) 12%);
+
+     }
+  }
+
+  &__nav {
+    position: fixed;
+    height: 100vh;
+    z-index: 1500;
+    opacity: 0;
+    width: 0;
+    transition-property: opacity, width;
+    transition-duration: .2s, .3s;
+    transition-timing-function: none, cubic-bezier(1,-0.01,.5,1.48);
+    transition-delay: 2s, none;
+
+    // transition: opacity .25s;
+    // transition: width .3s cubic-bezier(1,-0.01,.5,1.48);
+    // background-image: radial-gradient(
+    //   rgba($color-primary, 0.5),
+    //   rgba($color-primary--dark, 0.9)
+    // );
+  }
+
+  &__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+  }
+
+  &__item {
+    margin: 1rem;
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+        display: inline-block;
+
+      font-family: The Seasons, Arial, Helvetica, sans-serif;
+      font-weight: 200;
+      text-transform: uppercase;
+      font-size: 3rem;
+padding: 1rem 2rem;
+      color: $color-white-eggshell;
+      text-decoration: none;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: none;
+      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white-eggshell 60%);
+   background-size: 225%;
+transition: all .4s;
+
+@media (max-width: 500px) {
+    font-size:.5rem;
+  }
+ 
+span {
+    display: inline-block;
+    margin-right: 1.5rem;
+}
+   }
+   &:hover, &:active {
+    background-position: 100%;
+    color: $color-black-medium;
+    transform: translateX(1rem);
+    }
+    
+  }
+
+  #shop-link {
+    color: $color-gold-primary;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-gold-primary 60%);
+    background-size: 225%;
+
+    &:hover {
+      color: $color-black-medium;
+    }
+  }
+
+}

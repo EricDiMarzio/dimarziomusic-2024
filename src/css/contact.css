@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact form {
+  width: 90%;
+  max-width: 60rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+.contact .input-group {
+  margin-bottom: 3rem;
+  position: relative;
+}
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 1rem;
+  outline: 0;
+  border: 1px solid #ffbf00;
+  color: #FAF2E9;
+  background: transparent;
+  font-size: 1.6rem;
+  font-weight: 300;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+.contact label {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 1rem;
+  color: #FAF2E9;
+  cursor: text;
+}
+.contact button {
+  padding: 1rem 0;
+  color: #FAF2E9;
+  outline: none;
+  background: transparent;
+  border: 1px solid #FAF2E9;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0;
+}
+.contact button :hover {
+  transform: scale(1);
+}
+.contact .form-icons {
+  height: 2rem;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=contact.css.map */

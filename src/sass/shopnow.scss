@@ -1,0 +1,46 @@
+.shopnow {
+    position: relative;
+}
+
+@font-face {
+    font-family: "The Seasons";
+    src: url(./fonts/The-Seasons/The-Seasons-Light.ttf)
+    format("truetype");
+  }
+  
+  $color-black-dark: #070706;
+  $color-black-medium: #1C1C1A;
+  $color-black-light: #242424;
+  
+  $color-white-eggshell: #FAF2E9;
+  
+  $color-gold-primary: #ffbf00;
+
+
+.shopnow {
+    position: relative;
+}
+
+  .shopnow-button {
+    position: fixed;
+    top: 5rem;
+    left: 4rem;
+  
+    z-index: 200;
+    // border-radius: 5%;
+    background-color: rgba(#fff, 90%);
+    border: 3px solid $color-white-eggshell;
+
+    color: $color-black-medium;
+    box-shadow: .5rem .5rem 3rem rgba(#fff, .4);
+    text-transform: uppercase;
+    font-weight: 500;
+    
+    @media(max-width:1200px) {
+      // height: 5rem;
+      // width: 5rem;
+      top: 3.2rem;
+      left: 2rem;
+      font-size: 1rem;
+    }
+  }

@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$color-black-dark: #070706;
+$color-black-medium: #1C1C1A;
+$color-black-light: #242424;
+
+$color-white-eggshell: #FAF2E9;
+
+$color-gold-primary: #ffbf00;
+
+
+.contact {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: left;
+
+p {
+    padding: 5rem 3rem 0;
+    width: 90%;
+    max-width:60rem;
+}
+
+form {
+    margin: 4rem 0;
+    width: 90%;
+    max-width:60rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+   
+}
+.input-group {
+    margin-bottom: 3rem;
+    position: relative;
+
+}
+input, textarea {
+    width: 100%;
+    padding: 1rem;
+    outline: 0;
+    border: 1px solid $color-gold-primary;
+    color: $color-white-eggshell;
+    background: transparent;
+    font-size: 1.6rem;
+    font-weight: 300;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+label {
+    height: 100%;
+    position:absolute;
+    left: 0;
+    top: 0;
+    padding: 1rem;
+    color: $color-white-eggshell;
+    cursor: text;
+    transition: all .4s;
+    top: -03.5rem;
+    font-size: 14px;
+}
+
+button {
+    padding: 1rem 0;
+    color: $color-gold-primary;
+    outline: none;
+    background: transparent;
+    border: 1px solid $color-gold-primary;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 0;
+    box-shadow: .5rem 1rem 2rem rgba($color-gold-primary, .3);
+
+
+    :hover {
+        transform: scale(1);
+    }
+
+    
+}
+
+.form-icons {
+    height: 1.8rem;
+    background-color: transparent;
+    margin: 0 5px 0 2px;
+    padding: 0;
+}
+
+// input:focus~label, 
+// input:valid~label {
+//     top: -03.5rem;
+//     font-size: 14px;
+
+// }
+
+
+
+
+
+
+}

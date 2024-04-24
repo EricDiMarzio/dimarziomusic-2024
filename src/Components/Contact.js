@@ -3,23 +3,10 @@ import mail from '../Images/icons/mail.png';
 import chat from '../Images/icons/chat.png';
 import plane from '../Images/icons/send-gold.png';
 
-import React, {useState} from 'react';
 
 
 function Contact(){
 
-
-    const [userName, setUserName] = useState("");
-    const [userEmail, setUserEmail] = useState("");
-    const [userMessage, setUserMessage] = useState("");
-
-const handleSubmit = (e) => {
-    // e.preventDefault();
-    setUserName("")
-    setUserEmail("");
-    setUserMessage("")
-    
-}
 
 
 
@@ -31,11 +18,11 @@ const handleSubmit = (e) => {
         <div className="section contact" id="contact">
             <h2>Contact</h2>
             <p>Eric is now accepting commissions for choral or worship pieces. He is also available for choral clinician or worship leader services in the Houston area.</p>
-            <form onSubmit={handleSubmit} action="https://submit-form.com/lqUTxi7VK">
+            <form action="https://submit-form.com/lqUTxi7VK">
                 <div className="input-group">
                 {/* <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> */}
                 
-                    <input type="text" id="name" name="Name" placeholder={userName} required />
+                    <input type="text" id="name" name="Name" required />
                     <label for="name"><img className="form-icons" src={user} alt="user icon" />Full Name</label>
                 </div>
                 <div className="input-group">

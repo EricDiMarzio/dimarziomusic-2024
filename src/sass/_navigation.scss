@@ -43,11 +43,14 @@ $color-gold-primary: #ffbf00;
     &::before {
         transform: translateY(-0.55rem) rotate(-230deg);
         @media(max-width:1200px) {
-          transform: translateY(-0.6rem) rotate(-230deg);
+          transform: translateY(-0.7rem) rotate(-230deg);
         }
 }
 &::after {
     transform: translateY(-1.75rem) rotate(230deg);
+    @media(max-width:1200px) {
+      transform: translateY(-1.85rem) rotate(230deg);
+    }
 }
 }
 

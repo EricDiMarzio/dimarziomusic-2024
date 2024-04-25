@@ -32,6 +32,7 @@ $color-gold-primary: #ffbf00;
 &__checkbox:checked ~ &__nav {
     opacity: 1;
     width: 100%;
+    z-index: 1500;
 }
 
 &__checkbox:checked + &__button &__icon {
@@ -141,7 +142,7 @@ $color-gold-primary: #ffbf00;
   &__nav {
     position: fixed;
     height: 100vh;
-    z-index: 1500;
+    z-index: -1500;
     opacity: 0;
     width: 0;
     transition-property: opacity, width;

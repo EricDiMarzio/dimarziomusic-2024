@@ -1,6 +1,6 @@
 import hope from '../Images/the-hope-i-hold-cover.png'
 import edsr from '../Images/EDSR-f-treble-cover.png'
-import jolly from '../Images/jr-working.png'
+import jolly from '../Images/edc001-jolly-roger-cover.png'
 
 function Education(){
     return (

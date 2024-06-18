@@ -1,5 +1,5 @@
 // import piano from '../Images/piano-background.jpg'
-import portrait from '../Images/portrait-quito-color.jpg'
+import portrait from '../Images/eric-portrait-canyon-square.jpeg'
 
 function Header(){
     return (
